@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./icon/icon.png">
+    <script src="interact.js"></script>
+    <title>Concorra a um Ps5 Plus</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#cpf').mask('000.000.000-00', {reverse: true});
+        });
+    </script>
+</head>
+<body>
+    <div class="c1">
+        
+        <p class="titulo">
+            <h1>Concorra a um Ps5 Plus</h1>
+        </p>
+        <img src="lua.png" alt="" onclick="TemaEscuro()" width="35px">   
+        <img src="sol.png" alt="" onclick="Temaclaro()" width="35px">  
+        <p id="t"> 
+        Uma remessa de 100 unidades de PS5 Plus foi recebida danificada, apresentando falhas nos leitores de DVD. Como medida de
+        compensação, os consoles defeituosos estão sendo distribuídos por meio de sorteio. Esta ação busca mitigar os prejuízos
+        causados, assista ao vídeo abaixo para mais informações.
+        </p>
+
+        <p id="mensagem_para_cadastro">
+             Caso interessado, preencha o formulário abaixo.
+        </p>
+    </div>
+    
+
+    <div id="video">
+        <iframe width="80%" style="text-align: center; margin-left: 40px;" height="400vh" src= "https://www.youtube.com/embed/VZMPX2LwSOo?si=n6PKCof4_gpfDkpv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+
+         <div class="formulario">
+
+            <h2 id="n"> ㅤFormulário</h2>
+            <p class="f2"></p>ㅤㅤㅤ<input type="text" style="font-size: 10px; " size="15" placeholder="Nome Completo">
+            <p class="f2"></p>ㅤㅤㅤ<input type="email" style="font-size: 10px; "size="15" placeholder="Seu Email">
+            <p class="f2"></p>ㅤㅤㅤ<input type="number" style="font-size: 10px; " size="15" placeholder="Nº de Telefone">
+            <p class="f2"></p>ㅤㅤㅤ<input type="date"  style="font-size: 10px; " size="15"   placeholder="">
+            <p class="f2"></p>ㅤㅤㅤ<input type="text"  style="font-size: 10px; " size="15" id="cpf" name="cpf" placeholder="Escreva seu CPF">
+
+        </div> 
+
+
+
+
+
+
+        <div class="formulario2">
+
+            <h2 id="n">  ㅤFormulário</h2>
+            <p class="f2"></p>ㅤㅤㅤ<input type="text" style="font-size: 15px; " size="20" placeholder="Nome Completo">
+            <p class="f2"></p>ㅤㅤㅤ<input type="email" style="font-size: 15px; "size="20" placeholder="Seu Email">
+            <p class="f2"></p>ㅤㅤㅤ<input type="number" style="font-size: 15px; " size="20" placeholder="Nº de Telefone">
+            <p class="f2"></p>ㅤㅤㅤ<input type="date"  style="font-size: 15px; " size="25"   placeholder="">
+            <p class="f2"></p>ㅤㅤㅤ<input type="text"  style="font-size: 15px; " size="20" id="cpf" name="cpf" placeholder="Escreva seu CPF">
+
+        </div> 
+       
+    </div>
+
+</body>
+
+</html>
